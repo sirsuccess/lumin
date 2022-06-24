@@ -4,18 +4,7 @@ import * as ReactDOM from "react-dom/client"
 import { App } from "./App"
 import reportWebVitals from "./reportWebVitals"
 import * as serviceWorker from "./serviceWorker"
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  useQuery,
-  gql
-} from "@apollo/client";
 
-const client = new ApolloClient({
-  uri: 'https://48p1r2roz4.sse.codesandbox.io',
-  cache: new InMemoryCache()
-});
 
 
 

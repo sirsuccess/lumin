@@ -1,10 +1,6 @@
 import {
-  ChakraProvider,
-  Box,
-  Text,
   useDisclosure,
   ModalFooter,
-
   ModalBody,
   ModalCloseButton,
   ModalHeader,

@@ -2,22 +2,18 @@ import { ReactNode } from 'react';
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
   Button,
   Menu,
   MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorModeValue,
   Stack,
 } from '@chakra-ui/react';
 import "./styles.css"
-import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon} from '@chakra-ui/icons';
 
 const Links = ['Shop', 'Learn'];
 

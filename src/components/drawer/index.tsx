@@ -1,14 +1,7 @@
 import React from "react";
 import {
-  ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
   DrawerContent,
-  Flex,
-  Grid,
   DrawerBody,
   DrawerCloseButton,
   DrawerOverlay,

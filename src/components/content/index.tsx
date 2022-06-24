@@ -1,11 +1,10 @@
-import React, { useEffect, useState } from "react";
+
 import {
   Box,
   Text,
   Spacer,
   Flex,
   Image,
-  Button,
 } from "@chakra-ui/react";
 import Modal from "../drawer"
 import "./styles.css"

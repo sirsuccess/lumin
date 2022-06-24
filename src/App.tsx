@@ -1,27 +1,14 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Spacer,
-  Flex,
-  Grid,
   theme,
-  Image,
-  Button,
 } from "@chakra-ui/react";
 import Navbar from "./components/navbar/index";
-import Modal from "./components/modal";
-import Drawer from "./components/drawer";
 import Content from "./components/content";
 import {
   ApolloClient,
   InMemoryCache,
-  ApolloProvider,
-  useQuery,
   gql,
 } from "@apollo/client";
 
