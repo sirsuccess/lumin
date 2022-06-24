@@ -1,4 +1,5 @@
-import { useEffect, useState } from "react";
+/* eslint-disable react-hooks/exhaustive-deps */
+import { useEffect, useState} from "react";
 import {
   ChakraProvider,
   Box,
@@ -43,6 +44,7 @@ export const App = () => {
     })
     .then((result) => setProducts(result.data.products));
   }
+
   const queryCurrencyAPI = ()=>{
     client
     .query({
@@ -54,6 +56,7 @@ export const App = () => {
     })
     .then((result) => setCurrencies(result.data));
   }
+
 
   console.log("hello", currencies);
   return (
