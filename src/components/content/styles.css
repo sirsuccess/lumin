@@ -1,0 +1,10 @@
+.content{
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  background-color: rgb(224, 226, 224);
+}
+.product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
