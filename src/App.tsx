@@ -22,7 +22,8 @@ export const App = () => {
   const [products, setProducts] = useState([]);
   const [currencies, setCurrencies] = useState([]);
   const [cart, setCart] = useState([]);
-
+  const [currencySymbol, setCurrencySymbol] = useState("NGN");
+  
   useEffect(() => {
     queryProductAPI("NGN")
     queryCurrencyAPI()
@@ -43,6 +44,7 @@ export const App = () => {
       `,
     })
     .then((result) => setProducts(result.data.products));
+    setCurrencySymbol(currency)
   }
 
   const queryCurrencyAPI = ()=>{
@@ -54,18 +56,18 @@ export const App = () => {
         }
       `,
     })
-    .then((result) => setCurrencies(result.data));
+    .then((result) => setCurrencies(result.data.currency));
+
   }
 
 
-  console.log("hello", currencies);
   return (
     <ChakraProvider theme={theme}>
       <Box textAlign="center" fontSize="xl" w="100%">
         <Navbar cart={cart.length}/>
 
         {/* <Grid minH="100vh"> */}
-          <Content products={products} setCart={setCart} cart={cart}/>
+          <Content products={products} setCart={setCart} cart={cart} currencies={currencies} queryProductAPI={queryProductAPI} currencySymbol={currencySymbol}/>
         {/* </Grid> */}
       </Box>
     </ChakraProvider>
